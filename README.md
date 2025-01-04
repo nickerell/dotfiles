@@ -3,6 +3,9 @@
 ## Arch Process
 
 ### Terminal
+1. `yay -Syy nushell`
+1. Copy nushell/ in this repo to ~/.config/nushell.
+1. `yay -Syy ttf-firacode-nerd`
 1. `yay -Syy starship`
 1. Copy starship.toml to ~/.config/.
 1. `yay -Syy ghostty`
@@ -19,9 +22,12 @@
 1. Copy skhd/skhdrc in this repo to ~/.config/skhd/skhdrc.
 
 ### Terminal
+1. `brew install nushell` (MIT License)
+1. Copy nushell/ in this repo to ~/.config/nushell.
+1. Install Nerd Font from Approved OS Repo.
 1. `brew install starship` (ISC License)
 2. Copy starship.toml to ~/.config/.
-1. Install Ghostty from Approved Open Source Repo.
+1. Install Ghostty from Approved OS Repo.
 1. Copy ghostty/config in this repo to ~/.config/ghostty/config.
 
 ### Neovim
