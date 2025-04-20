@@ -5,7 +5,8 @@
 ### Terminal
 1. `yay -Syy nushell`
 1. Copy nushell/ in this repo to ~/.config/nushell.
-1. chsh -s /bin/nu  
+1. chsh -s /bin/nu
+1. `yay -Syy stow`
 1. `yay -Syy ttf-firacode-nerd`
 1. `yay -Syy starship`
 1. Copy starship.toml to ~/.config/.
@@ -25,6 +26,8 @@
 ### Terminal
 1. `brew install nushell` (MIT License, might also need openssl and cmake as dependencies)
 1. Copy nushell/ in this repo to ~/.config/nushell.
+1. Step here to change default shell on Mac to Nu.
+1. `brew install stow` 
 1. Install Nerd Font from Approved OS Repo.
 1. `brew install starship` (ISC License)
 2. Copy starship.toml to ~/.config/.
