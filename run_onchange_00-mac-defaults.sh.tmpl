@@ -37,4 +37,10 @@ defaults write com.apple.dock showDesktopEdgeSwitch -bool false
 defaults write com.apple.Accessibility DifferentiateWithoutColor -bool true
 
 killall Finder Dock 2>/dev/null || true
+
+# Add Fish to the list of allowed shells
+echo $(which fish) | sudo tee -a /etc/shells
+
+# Set Fish as the default login shell
+chsh -s $(which fish)   
 {{ end -}}
