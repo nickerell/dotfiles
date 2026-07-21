@@ -22,6 +22,8 @@ defaults write com.apple.dock persistent-others -array
 defaults write com.apple.WindowManager StageManagerGloballyEnabled -bool false
 defaults write com.apple.WindowManager StageManagerHideWidgets -bool true
 
+defaults write com.apple.WindowManager StandardHideWidgets -bool true
+
 defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerHorizSwipeGesture -int 0
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 0
 defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 0
@@ -32,4 +34,6 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate -bool false
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 0
 defaults write com.apple.dock showDesktopEdgeSwitch -bool false
 defaults write com.apple.Accessibility DifferentiateWithoutColor -bool true
+
+killall Finder Dock 2>/dev/null || true
 {{ end -}}
