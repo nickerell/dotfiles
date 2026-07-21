@@ -1,0 +1,2 @@
+fish_add_path "$HOME/.local/bin"
+set -x EDITOR "nvim"

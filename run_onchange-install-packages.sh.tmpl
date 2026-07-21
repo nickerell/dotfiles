@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# packages.yaml hash: {{ include ".chezmoidata/packages.yaml" | sha256sum }}
+
+{{ if eq .chezmoi.os "darwin" -}}
+
+brew bundle --file=/dev/stdin <<EOF
+{{ range .packages.macos.formulae -}}
+brew {{ . | quote }}
+{{ end -}}
+{{ range .packages.macos.casks -}}
+cask {{ . | quote }}
+{{ end -}}
+EOF
+
+{{ end -}}
+
+
+{{ if eq .chezmoi.os "linux" -}}
+
+{{ range .packages.arch.nonaur -}}
+sudo pacman -S --needed {{ . | quote }}
+{{ end -}}
+{{ range .packages.arch.aur -}}
+yay -S --needed {{ . | quote }}
+{{ end -}}
+
+{{ end -}}
