@@ -9,7 +9,4 @@
 
 ## Mac
 
-1. [Install Homebrew](https://brew.sh/)
-1. `brew install chezmoi`
-1. `chezmoi init --ssh --apply nickerell`
-   
+1. `sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --ssh --apply nickerell` 
