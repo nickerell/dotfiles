@@ -1,0 +1,30 @@
+#!/bin/bash
+
+{{ if eq .chezmoi.os "darwin" -}}
+defaults write com.apple.Spotlight AllowSpotlightQueriesToSiri -bool false
+defaults write com.apple.Spotlight SearchLocationEnabled -bool false
+defaults write com.apple.Spotlight SiriSuggestionsEnabled -bool false
+
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -float 0
+
+defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-others -array
+
+defaults write com.apple.WindowManager StageManagerGloballyEnabled -bool false
+defaults write com.apple.WindowManager StageManagerHideWidgets -bool true
+
+defaults write com.apple.AppleMultitouchTrackpad TrackpadTwoFingerHorizSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerVertSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerVertSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerHorizSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadFourFingerHorizSwipeGesture -int 0
+defaults write com.apple.AppleMultitouchTrackpad TrackpadPinch -bool false
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRotate -bool false
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerTapGesture -int 0
+defaults write com.apple.dock showDesktopEdgeSwitch -bool false
+defaults write com.apple.Accessibility DifferentiateWithoutColor -bool true
+{{ end -}}
