@@ -1,0 +1,32 @@
+packages:
+  macos:
+    formulae:
+      - 'proton-pass-cli'
+      - 'git' 
+      - 'fish'
+      - 'ghostty'
+      - 'starship'
+      - 'neovim'
+      - 'tailscale'
+      - 'kubie'
+      - 'k9s'
+    casks:
+      - 'font-maple-mono-nf'
+      - 'brave-browser'
+      - 'slack'
+      - 'granola'
+  arch:
+    nonaur:
+      - 'git'
+      - 'fish'
+      - 'ghostty'
+      - 'starship'
+      - 'neovim'
+      - 'tailscale'
+      - 'kubie'
+      - 'k9s'
+    aur:
+      - 'maplemono-nf-unhinted'
+      - 'proton-pass-cli-bin'
+      - 'brave-bin'
+      - 'slack-desktop'

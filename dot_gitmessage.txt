@@ -1,0 +1,6 @@
+fix|feat|docs|chore!: present-tense plural short desc
+
+Wow, I can describe things longer here wowow. We do not need a 
+breaking change footer due to the exclamation mark shorthand.
+
+
