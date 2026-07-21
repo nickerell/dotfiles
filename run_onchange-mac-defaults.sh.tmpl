@@ -1,6 +1,11 @@
 #!/bin/bash
 
 {{ if eq .chezmoi.os "darwin" -}}
+
+{{- if not (lookPath "brew") }}
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+{{- end }}
+
 defaults write com.apple.Spotlight AllowSpotlightQueriesToSiri -bool false
 defaults write com.apple.Spotlight SearchLocationEnabled -bool false
 defaults write com.apple.Spotlight SiriSuggestionsEnabled -bool false
