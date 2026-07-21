@@ -1,0 +1,4 @@
+# Mac starts off with zsh. We need to pull down chezmoi/install brew/install brew packages before we have fish. 
+# This allows brew to be found regardless of what OS as a simpleton approach.
+# Still not perfect because the current shell setting up the mac is without this new .zshrc.
+export PATH="${PATH}:{{ .chezmoi.homeDir -}}/bin:/opt/homebrew/bin:/home/linuxbrew/.linuxbrew/bin:/usr/local/bin"

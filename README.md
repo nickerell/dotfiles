@@ -10,4 +10,7 @@
 ## Mac
 
 1. `xcode-select --install`
-1. `sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --ssh --apply nickerell` 
+1. `sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --ssh --apply nickerell`
+1. Might need to close current shell to get zsh path updates.
+1. `pass-cli login`
+1. `chezmoi apply`
