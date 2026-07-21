@@ -9,4 +9,5 @@
 
 ## Mac
 
+1. `xcode-select --install`
 1. `sh -c "$(curl -fsLS https://get.chezmoi.io)" -- init --ssh --apply nickerell` 
