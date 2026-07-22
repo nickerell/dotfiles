@@ -12,6 +12,7 @@ cask {{ . | quote }}
 EOF
 
 {{ range .packages.services -}}
+# Some services like tailscale need to run as root. So will need to distinguish those in the datas somehows.
 brew services start {{ . | quote }}
 {{ end -}}
 
