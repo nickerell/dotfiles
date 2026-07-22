@@ -1,0 +1,14 @@
+packages:
+  nonaur:
+    - 'git'
+    - 'fish'
+    - 'ghostty'
+    - 'neovim'
+    - 'tailscale'
+    - 'kubie'
+    - 'k9s'
+  aur:
+    - 'maplemono-nf-unhinted'
+    - 'proton-pass-cli-bin'
+    - 'brave-bin'
+    - 'slack-desktop'

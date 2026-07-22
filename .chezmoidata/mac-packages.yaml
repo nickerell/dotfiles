@@ -1,0 +1,17 @@
+packages:
+  formulae:
+    - 'proton-pass-cli'
+    - 'git' 
+    - 'fish'
+    - 'neovim'
+    - 'tailscale'
+    - 'kubie'
+    - 'k9s'
+  casks:
+    - 'font-maple-mono-nf'
+    - 'ghostty'
+    - 'brave-browser'
+    - 'slack'
+    - 'granola'
+  services:
+    - 'tailscale'
