@@ -2,10 +2,10 @@
 #!/bin/bash
 # arch-packages.yaml hash: {{ include ".chezmoidata/arch-packages.yaml" | sha256sum }}
 
-{{ range .arch-packages.nonaur -}}
+{{ range .packages.nonaur -}}
 sudo pacman -S --needed {{ . | quote }}
 {{ end -}}
-{{ range .arch-packages.aur -}}
+{{ range .packages.aur -}}
 yay -S --needed {{ . | quote }}
 {{ end -}}
 
