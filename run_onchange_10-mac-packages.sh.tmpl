@@ -3,15 +3,15 @@
 # mac-packages.yaml hash: {{ include ".chezmoidata/mac-packages.yaml" | sha256sum }}
 
 brew bundle --file=/dev/stdin <<EOF
-{{ range .mac-packages.formulae -}}
+{{ range .packages.formulae -}}
 brew {{ . | quote }}
 {{ end -}}
-{{ range .mac-packages.casks -}}
+{{ range .packages.casks -}}
 cask {{ . | quote }}
 {{ end -}}
 EOF
 
-{{ range .mac-packages.services -}}
+{{ range .packages.services -}}
 brew services start {{ . | quote }}
 {{ end -}}
 
