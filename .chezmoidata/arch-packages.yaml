@@ -3,6 +3,7 @@ packages:
     - 'git'
     - 'fish'
     - 'ghostty'
+    - 'go'
     - 'neovim'
     - 'tailscale'
     - 'kubie'

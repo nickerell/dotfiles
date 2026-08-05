@@ -3,6 +3,7 @@ packages:
     - 'proton-pass-cli'
     - 'git' 
     - 'fish'
+    - 'go'
     - 'neovim'
     - 'tailscale'
     - 'kubie'
