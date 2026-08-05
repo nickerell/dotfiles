@@ -1,0 +1,6 @@
+{
+  "lastChangelogVersion": "0.83.0",
+  "theme": "catppuccin-mocha",
+  "defaultProvider": "openrouter",
+  "defaultModel": "qwen/qwen3-max"
+}
