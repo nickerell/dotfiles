@@ -14,5 +14,6 @@ packages:
     - 'brave-browser'
     - 'slack'
     - 'granola'
+    - 'fantastical'
   services:
     - 'tailscale'
