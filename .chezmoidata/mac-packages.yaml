@@ -6,6 +6,7 @@ packages:
     - 'go'
     - 'neovim'
     - 'tailscale'
+    - 'kubectl'
     - 'kubie'
     - 'k9s'
   casks:
