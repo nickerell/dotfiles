@@ -1,0 +1,17 @@
+{{- if lookPath "pass-cli" -}}
+{{- $bcHost := protonPass "pass://Mp-PuPsRTXvRQeT7txzJhm97VVWJV0pNkw36CSw-iQYszCfTn8Mgemq9IOmoPPntUWSxU133AfIAwDUM1G_AIw==/TA74rNrZwnXa8jLR--8Zfd2EwV7QAFSn4Kfpd3ihmzyAlNX218SU5LciUcJJEcbE6pPFyZK0zZ35g4_W2Wbw9g==/Host" -}}
+Host github.com
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/gh_ed25519
+        IdentitiesOnly yes
+{{ print "Host " $bcHost -}} 
+{{ print "        HostName " $bcHost -}} 
+{{ print "        User git" }}
+{{ print "        IdentityFile ~/.ssh/gh_bc_ed25519" }}
+{{ print "        IdentitiesOnly yes" }}
+{{- else -}}
+  chezmoi: pass-cli not yet installed, run again to set after pass-cli login
+{{- end -}}
+
+

@@ -1,0 +1,5 @@
+{{- if lookPath "pass-cli" -}}
+{{ protonPass "pass://Mp-PuPsRTXvRQeT7txzJhm97VVWJV0pNkw36CSw-iQYszCfTn8Mgemq9IOmoPPntUWSxU133AfIAwDUM1G_AIw==/judMMBnhuz-oPkuck3e5vfm2xBpMyg6epSuYDaO6lHb-FX1R7hbHUa624Xkmkr81YPYPpDzxWRPA4BMGx9c4tg==/Private key" }}
+{{- else -}}
+  chezmoi: pass-cli not yet installed, run again to set after pass-cli login
+{{- end }}
